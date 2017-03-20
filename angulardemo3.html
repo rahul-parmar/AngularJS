@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="">
+    <meta name="robots" content="">
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="shortcut icon" href=""> </head>
+
+<body ng-app="MyApp">
+    <div ng-controller="DataHttpCtrl">
+        <table>
+            <thead>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Body</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="post in posts">
+                    <td ng-bind="post.id"></td>
+                    <td ng-bind="post.title"></td>
+                    <td ng-bind="post.body"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="../screenshots/AngularJS/src/app.js"></script>
+    <script src="../screenshots/AngularJS/src/controllers/DataHttpCtrl.js"></script>
+    <script src="../screenshots/AngularJS/src/services/DataHttpService.js"></script>
+</body>
+
+</html>

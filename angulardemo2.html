@@ -1,0 +1,66 @@
+<html lang="en" >
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="">
+        <meta name="robots" content="">
+        <link rel="stylesheet" type="text/css" href="">
+        <link rel="shortcut icon" href="">
+    </head>
+    <body ng-app="MyApp">
+		<div ng-controller="DataCtrl">
+			<form  name="myForm" id="paymentAddress">
+         <table cellspacing="2" cellpadding="2" border="1">
+			 <caption>Payment Address</caption>
+            
+            <tr>
+               <td align="right">City</td>
+               <td><input type="text" name="city" id="city" ng-model="model.city" /></td>
+            </tr>
+            
+            <tr>
+               <td align="right">State</td>
+               <td><input type="text" name="state" id="state" ng-model="model.state" /></td>
+            </tr>
+            
+            
+												</table>
+												</form>
+		</div>
+		<div ng-controller="FormCtrl">
+	
+	<label for="checkBox">Shipping Address SameAs PaymentAddress
+	<input type="checkbox" name="checkBox" id="checkBox" ng-change="change()" ng-model="checked"/>										</label>	
+		
+	<form  name="myForm" id="shippingAddress">
+         <table cellspacing="2" cellpadding="2" border="1">
+			 <caption>Shipping Address</caption>
+            
+            <tr>
+               <td align="right">City</td>
+               <td><input type="text" name="city" id="city" ng-model="newmodel.city" /></td>
+            </tr>
+            
+            <tr>
+               <td align="right">State</td>
+               <td><input type="text" name="state" id="state" ng-model="newmodel.state" /></td>
+            </tr>
+            
+            
+												</table>
+												</form>
+
+		
+		
+		</div>
+        
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+		 <script src="../screenshots/AngularJS/src/app.js"></script>
+		<script src="../screenshots/AngularJS/src/controllers/DataCtrl.js"></script>
+		<script src="../screenshots/AngularJS/src/controllers/FormCtrl.js"></script>
+		<script src="../screenshots/AngularJS/src/services/DataService.js"></script>
+    </body>
+</html>
